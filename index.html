@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boredom Roulette</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="jmbo">Boredom Roulette</h1>
+            <p class="sml">All options</p>
+        </div>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Random</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="single.html">One Person</a>
+                      <a class="dropdown-item" href="social.html">Social</a>
+                      <a class="dropdown-item" href="inside.html">Inside</a>
+                      <a class="dropdown-item" href="outside.html">Outside</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myRoulettes.html">My Roulettes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="newRoulette.html">Make Roulette</a>
+                  </li>
+            </ul>
+        </nav>
+        <div class="suggestion">
+            <h1 class="start">You could...</h1>
+            <h1 id="opt"></h1>
+        </div>
+        <button onclick="allIdeas()" class="btn btn-lg btn-light">Cure My Boredom</button>
+        <hr>
+        <p>Powered by Boredom&copy;</p>
+    </div>
+</body>
+</html>

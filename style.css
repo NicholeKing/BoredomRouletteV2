@@ -1,0 +1,61 @@
+.container {
+    width: 480px;
+    height: 720px;
+    background-color: #f4eeff;
+    padding: 0px;
+}
+
+.jumbotron {
+    color: #424874;
+    background-color: #dcd6f7;
+    padding: 32px;
+    padding-bottom: 16px;
+    margin: 0px;
+    text-align: center;
+}
+
+.jmbo {
+    margin: 0px;
+}
+
+button{
+    width: 480px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 28px;
+    font-size: 42px;
+}
+
+.suggestion {
+    height: 45%;
+    text-align: center;
+    color: #424874;
+}
+
+p {
+    margin-left: 32px;
+}
+
+.start {
+    padding-top: 75px;
+}
+
+.addRo {
+    padding-top: 15px;
+}
+
+li {
+    padding-right: 8px;
+    margin-left: 8px;
+    border-right: 1px ridge #dcd6f7;
+}
+li:last-child {
+    border-right: none;
+}
+
+.sml {
+    margin-left: 200px;
+    margin-bottom: 0px;
+}
