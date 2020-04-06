@@ -305,6 +305,7 @@ function outsideIdeas()
 function addRoulette()
 {
     Rtitle = document.getElementById("title").value;
+    sessionStorage.setItem('RoulTitle', Rtitle);
     var ideas = document.getElementById("ideas").value;
     start = 0;
     end = 0;
@@ -336,5 +337,18 @@ function addRoulette()
             newArr.push(idea)
         }
     }
+    sessionStorage.setItem('RoulIdeas', JSON.stringify(newArr));
     location.href = "myRoulettes.html";
+}
+
+function MyIdeas()
+{
+    var mine = JSON.parse(sessionStorage.getItem('RoulIdeas'));
+    if(mine == null || mine.length == 0)
+    {
+        location.href = "newRoulette.html";
+    } else {
+        var rand = Math.floor(Math.random()*mine.length);
+        document.getElementById("opt").innerHTML = mine[rand];
+    }
 }

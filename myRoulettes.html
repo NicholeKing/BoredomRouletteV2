@@ -31,25 +31,34 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="myRoulettes.html">My Roulettes</a>
+                    <a class="nav-link active" href="myRoulettes.html">My Roulette</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="newRoulette.html">Make Roulette</a>
+                    <a class="nav-link" href="newRoulette.html">Create</a>
                   </li>
             </ul>
         </nav>
         <div class="suggestion">
-            <h1 id="roulTitle">No roulette to display</h1>
+            <h1 id="roulTitle"></h1>
+            <h1 id="start"></h1>
+            <h1 id="opt"></h1>
         </div>
-        <button onclick="location.href='newRoulette.html'" class="btn btn-lg btn-light">Make one!</button>
+        <button onclick="MyIdeas()" class="btn btn-lg btn-light" id="myChoice">Make one!</button>
         <hr>
         <p>Powered by Boredom&copy;</p>
     </div>
     <script>
-        var title = document.getElementById("roulTitle").innerHTML = Rtitle;
-        if(title == "")
+        var t = sessionStorage.getItem('RoulTitle');
+        console.log(t);
+        var i = sessionStorage.getItem('RoulIdeas');
+        console.log(i);
+        var title = document.getElementById("roulTitle").innerHTML = t;
+        if(title == null)
         {
             title = document.getElementById("roulTitle").innerHTML = "No roulette to display";
+        } else {
+            document.getElementById("start").innerHTML = "You could...";
+            document.getElementById("myChoice").innerHTML = "Cure My Boredom";
         }
     </script>
 </body>

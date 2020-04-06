@@ -31,26 +31,26 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="myRoulettes.html">My Roulettes</a>
+                    <a class="nav-link" href="myRoulettes.html">My Roulette</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="newRoulette.html">Make Roulette</a>
+                    <a class="nav-link active" href="newRoulette.html">Create</a>
                   </li>
             </ul>
         </nav>
         <div class="suggestion">
-            <h1 class="addRo">Under consrtuction</h1>
+            <h1 class="addRo">Add A Roulette</h1>
             <div class="row">
                 <div class="col-sm-1"></div>
                 <form class="col-sm-10">
                     <label for="title">Roulette Name</label>
-                    <input type="text" id="title" class="form-control">
+                    <input name="title" type="text" id="title" class="form-control">
                     <label for="ideas">Ideas (Please separate ideas with semicolons)</label>
-                    <textarea id="ideas" rows="5" class="form-control"></textarea>
+                    <textarea name="ideas" id="ideas" rows="5" class="form-control"></textarea>
                 </form>
             </div>
         </div>
-        <button onclick="addRoulette()" class="btn btn-lg btn-light">Add Roulette</button>
+        <button onclick="addRoulette()"class="btn btn-lg btn-light">Add Roulette</button>
         <hr>
         <p>Powered by Boredom&copy;</p>
     </div>
